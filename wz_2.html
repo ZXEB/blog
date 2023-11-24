@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Document</title>
+    <link href="css/mdui.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href = “https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css"  rel = ”stylesheet“ >
+</head>
+
+<body class="mdui-bottom-nav-fixed mdui-drawer-body-left mdui-bottom-nav-fixed">
+
+<!--顶部导航栏-->
+<div class="mdui-appbar mdui-appbar-fixed">
+    <div class="mdui-toolbar mdui-color-theme">
+        <!--绑定侧边栏事件-->
+        <a class="mdui-btn mdui-btn-icon" href="javascript:" mdui-drawer="{target: '#left-drawer'}"><i
+                class="mdui-icon material-icons">menu</i></a>
+
+        <a class="mdui-typo-headline" href="javascript:">The Blog Of SpringWaterLikeMe</a>
+        <div class="mdui-toolbar-spacer"></div>
+
+        <a class="mdui-btn mdui-btn-icon" href="javascript:onclick(window.location.reload())" ><i class="mdui-icon material-icons">refresh</i></a>
+        <a class="mdui-btn mdui-btn-icon" href="javascript:" mdui-dialog="{target: '#shareButton'}"><i class="mdui-icon material-icons">share</i></a>
+        <button onclick="window.location.href='login.html'article.html" class="mdui-btn mdui-color-theme-accent mdui-ripple">文章</button>
+
+    </div>
+</div>
+
+<!--侧边栏-->
+<div class="mdui-drawer" id="left-drawer">
+    <ul class="mdui-list">
+        <div class="mdui-card">
+            <div class="mdui-card-media">
+                <div class="color_card_mask mdui-color-theme"></div>
+                <img src="image/MainSection.png">
+                <div class="mdui-card-media-covered">
+                    <div class="mdui-card-primary">
+                        <div class="mdui-card-primary-title">ZXEB的小窝</div>
+                        <div class="mdui-card-primary-subtitle">2022-2023</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <li class="mdui-list-item mdui-ripple mdui-m-t-1">
+            <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+            <div class="mdui-list-item-content">主页</div>
+        </li>
+        <li class="mdui-list-item mdui-ripple">
+            <i class="mdui-list-item-icon mdui-icon material-icons">book</i>
+            <div class="mdui-list-item-content">关于</div>
+        </li>
+    </ul>
+</div>
+
+
+
+<!--背景图片  ： 沉浸系统-->
+<div class="bgCarouselMaks" style="position: fixed;top: 0;left: 0;width: 100%;height: 100%;opacity: 0.5;background-color: black;z-index: -1"></div>
+<div id="bgCarousel" style="z-index: -2">
+    <img src="image/bgPic/red.jpg">
+    <img src="image/bgPic/pink.jpg">
+    <img src="image/bgPic/purple.jpg">
+    <img src="image/bgPic/indigo.jpg">
+    <img src="image/bgPic/blue.jpg">
+    <img src="image/bgPic/light-blue.jpg">
+    <img src="image/bgPic/cyan.jpg">
+    <img src="image/bgPic/teal.jpg">
+    <img src="image/bgPic/green.jpg">
+    <img src="image/bgPic/light-green.jpg">
+    <img src="image/bgPic/lime.jpg">
+    <img src="image/bgPic/yellow.jpg">
+    <img src="image/bgPic/orange.jpg">
+    <img src="image/bgPic/deep-orange.jpg">
+    <img src="image/bgPic/brown.jpg">
+    <img src="image/bgPic/grey.jpg">
+    <img src="image/bgPic/blue-grey.jpg">
+    <img src="image/bgPic/default.jpg">
+</div>
+
+
+<!--主体内容-->
+<div class="mdui-container">
+    <!--    <img src="image/HomePic1.jpg" alt="" class="mdui-img-fluid home-bg-pic1">-->
+    <!--    <div class="mdui-valign mdui-typo mdui-text-color-black-text">-->
+    <!--        <h1 class="mdui-center">荆轲刺秦王</h1>-->
+    <!--    </div>-->
+    <div class="card-blank"></div>
+    <div class="mdui-card about-card">
+        <div class="mdui-card-primary ">
+            <div class="mdui-card-primary-title">
+                <a class="mdui-text-color-theme-accent" href="#">使用游戏面版开0.14.3服务器</a>
+            </div>
+            <div class="mdui-card-primary-subtitle">2023.11.19</div>
+        </div>
+        <div class="mdui-card-content mdui-typo">
+        <p>众所周知 开0.14.3mc服务器大多数都是使用pm核心搭配windows系统开的</p>
+          <p>但是运行Windows的服务器配置至少是2h2g的这就导致每个月支付服务器的费用很高</p>
+          <p>所以这篇文章就是教你最省钱开我的世界0.14.3服务器</p>
+          <hr>
+          <p>首先要找一个价格十分便宜的游戏面板提供商</p>
+          <p>这里推荐的是 雨云 链接：rainyun.com</p>
+          <img src="https://picss.sunbangyan.cn/2023/11/19/0a399efbac2ea2beddf123d287d28998.jpg" alt="IMG_0111(20231119-002751)" />
+          <p>直接注册账号然后进入到控制台<p>
+            <img src="https://picst.sunbangyan.cn/2023/11/19/7aaa308f66e5dc5ff5f073e2f0f9ee5b.jpg" alt="IMG_0112(20231119-003250)" />
+            <p>到了控制台后依次点击 积分中心-赚取积分<p>>
+              <img src="https://picdm.sunbangyan.cn/2023/11/19/b9390f24596e4b51a25c69fef2c2b7e4.png" alt="IMG_0113(20231119-003617)" />
+              <p>不出意外的话 你因该会到达这个页面</p>
+              <img src="https://www.z4a.net/images/2023/11/20/79B11501-22B3-4035-AABA-D6AADE1BD255.png" alt="79B11501-22B3-4035-AABA-D6AADE1BD255.png" border="0" />
+              <p>到了这个页面之后再向下滑动到这个页面</p>
+              <img src="https://www.z4a.net/images/2023/11/20/F3605A95-46AC-44B0-9982-C6F57EF05599.png" alt="F3605A95-46AC-44B0-9982-C6F57EF05599.png" border="0" />
+              <p>到这个地方后把能做的任务都给做了尽量获得最多的积分</p>
+              <p>获得完积分后回到主界面</p>
+              <p>现在唯一花钱的地方来了</p>
+              <p>点击图片中的位置</p>
+              <img src="https://picss.sunbangyan.cn/2023/11/23/ec18a3a5b60d2e0526aa659e86db8461.jpeg" alt="37A7E165-297C-4100-B146-D57BEAF8A3B6" />
+              <p>点进去之后会到这个页面</p>
+              <img src="https://picdl.sunbangyan.cn/2023/11/23/ce5f01f0af8918b7881ac8eab2641d1b.jpeg" alt="7A00626C-25B1-4E02-99AB-207374C00CAE" />
+              <p>到了这个页面之后滑倒底部</p>
+              <img src="https://picdm.sunbangyan.cn/2023/11/23/b7b9b103d6b5cd2b5a7edf2542ed4fa2.jpeg" alt="50B57B08-96E5-4AE1-A91F-62996B0FBB26" />
+              <p>输入金额一元</p>
+              <p>然后选择一个付款方式付款即可</p>
+              <p>付款后再次退回主界面</p>
+              <p>回到主界面后向下滑动点击游戏云</p>
+              <img src="https://picst.sunbangyan.cn/2023/11/23/f6a1e628048844bc1d982a46c494d02e.jpeg" alt="49EF9F48-6411-4DB2-92FF-FB374BD67848" />
+              <p>进入之后点击购买游戏云</p>
+              <img src="https://picst.sunbangyan.cn/2023/11/23/41ffc77f23983dc3a62b7508a0d5da56.jpeg" alt="0B149747-60C0-445D-9188-C8991B7FBB10" />
+              <p>接下来按照我的设置来设置</p>
+              <p>游戏内型选择MCSM面板</p>
+              <img src="https://picdl.sunbangyan.cn/2023/11/23/6f2462b4a9af37d28ded374b05851365.jpeg" alt="048C50D1-E976-40EB-A96A-DADA8EAE5A5A" />
+              <p>cpu内型选择E5即可</p>
+              <img src="https://picst.sunbangyan.cn/2023/11/23/aa58551ce51a9c118379db4750218bf3.jpeg" alt="E6ED2B29-3DBE-4D46-B1BE-A363347FB5EE" />
+              <p>计费模式选择动态计费</p>
+              <img src="https://picss.sunbangyan.cn/2023/11/23/65ab5cfd9498e25b86f14fe50a91271e.jpeg" alt="55737CD0-9916-4B3F-BD85-4E72A98C4331" />
+              <p>然后去把这些东西调到最低</p>
+              <img src="https://picdl.sunbangyan.cn/2023/11/23/14509e6031fc2f8d35bd1662e465c003.jpeg" alt="FD11EAC3-6A41-4957-BB53-01CBF5C0B34C" />
+              <p>再把这个改成日付 确认好后就可以直接购买了</p>
+              src="https://picst.sunbangyan.cn/2023/11/23/bd3f3ebcbea24f0785f2ed42bb9b636d.jpeg" alt="7467CA6D-D86C-4767-A8D0-4E747D24147F" />
+              <h2>未完待续</h2>
+          
+          
+        </div>
+    </div>
+
+
+<!--    分享弹窗-->
+    <div class="mdui-dialog" id="shareButton">
+        <div class="mdui-dialog-title">请您复制到剪切板后手动发送</div>
+        <div class="mdui-dialog-content" id="printLocation"></div>
+        <div class="mdui-dialog-actions">
+            <button class="mdui-btn mdui-ripple" mdui-dialog-close>确定</button>
+            <button class="mdui-btn mdui-ripple" onclick="CopyLocation()" mdui-dialog-confirm>复制到剪切板</button>
+        </div>
+    </div>
+</div>
+
+
+<!--底部向上-->
+<div class="mdui-fab mdui-radio mdui-fab-fixed mdui-color-theme-accent" id="btn">
+    <i class="mdui-icon material-icons">arrow_upward</i>
+</div>
+
+
+<script src="js/jquery-3.4.0.min.js"></script>
+<script src="js/mdui.js"></script>
+<script src="js/jquery.qrcode.min.js"></script>
+<script src="js/returnTop.js"></script>
+<script src="js/social-share.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+
+</script>
+</body>
+</html>
+

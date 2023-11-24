@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Document</title>
+    <link href="css/mdui.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href = “https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css"  rel = ”stylesheet“ >
+</head>
+
+<body class="mdui-bottom-nav-fixed mdui-drawer-body-left mdui-bottom-nav-fixed">
+
+<!--顶部导航栏-->
+<div class="mdui-appbar mdui-appbar-fixed">
+    <div class="mdui-toolbar mdui-color-theme">
+        <!--绑定侧边栏事件-->
+        <a class="mdui-btn mdui-btn-icon" href="javascript:" mdui-drawer="{target: '#left-drawer'}"><i
+                class="mdui-icon material-icons">menu</i></a>
+
+        <a class="mdui-typo-headline" href="javascript:">The Blog Of SpringWaterLikeMe</a>
+        <div class="mdui-toolbar-spacer"></div>
+
+        <a class="mdui-btn mdui-btn-icon" href="javascript:onclick(window.location.reload())" ><i class="mdui-icon material-icons">refresh</i></a>
+        <a class="mdui-btn mdui-btn-icon" href="javascript:" mdui-dialog="{target: '#shareButton'}"><i class="mdui-icon material-icons">share</i></a>
+        <button onclick="window.location.href='article.html'" class="mdui-btn mdui-color-theme-accent mdui-ripple">文章</button>
+        
+    </div>
+</div>
+
+<!--侧边栏-->
+<div class="mdui-drawer" id="left-drawer">
+    <ul class="mdui-list">
+        <div class="mdui-card">
+            <div class="mdui-card-media">
+                <div class="color_card_mask mdui-color-theme"></div>
+                <img src="image/MainSection.png">
+                <div class="mdui-card-media-covered">
+                    <div class="mdui-card-primary">
+                        <div class="mdui-card-primary-title">ZXEB的小窝</div>
+                        <div class="mdui-card-primary-subtitle">2022-2023</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <li class="mdui-list-item mdui-ripple mdui-m-t-1">
+            <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+            <div class="mdui-list-item-content">主页</div>
+        </li>
+        <li class="mdui-list-item mdui-ripple">
+            <i class="mdui-list-item-icon mdui-icon material-icons">book</i>
+            <div class="mdui-list-item-content">关于</div>
+        </li>
+    </ul>
+</div>
+
+
+
+<!--背景图片  ： 沉浸系统-->
+<div class="bgCarouselMaks" style="position: fixed;top: 0;left: 0;width: 100%;height: 100%;opacity: 0.5;background-color: black;z-index: -1"></div>
+<div id="bgCarousel" style="z-index: -2">
+    <img src="image/bgPic/red.jpg">
+    <img src="image/bgPic/pink.jpg">
+    <img src="image/bgPic/purple.jpg">
+    <img src="image/bgPic/indigo.jpg">
+    <img src="image/bgPic/blue.jpg">
+    <img src="image/bgPic/light-blue.jpg">
+    <img src="image/bgPic/cyan.jpg">
+    <img src="image/bgPic/teal.jpg">
+    <img src="image/bgPic/green.jpg">
+    <img src="image/bgPic/light-green.jpg">
+    <img src="image/bgPic/lime.jpg">
+    <img src="image/bgPic/yellow.jpg">
+    <img src="image/bgPic/orange.jpg">
+    <img src="image/bgPic/deep-orange.jpg">
+    <img src="image/bgPic/brown.jpg">
+    <img src="image/bgPic/grey.jpg">
+    <img src="image/bgPic/blue-grey.jpg">
+    <img src="image/bgPic/default.jpg">
+</div>
+
+
+
+<!--主体内容-->
+<div class="mdui-container">
+    <!--    <img src="image/HomePic1.jpg" alt="" class="mdui-img-fluid home-bg-pic1">-->
+    <!--    <div class="mdui-valign mdui-typo mdui-text-color-black-text">-->
+    <!--        <h1 class="mdui-center">荆轲刺秦王</h1>-->
+    <!--    </div>-->
+    <div class="mobile-title">
+        <div class="mdui-text-color-theme mdui-typo mdui-text-color-theme-accent page-title mdui-m-l-2 mdui-p-t-1 mdui-clearfix">
+            <h1 class="mdui-float-left">MDUI  注意 因为本网站是静态网页为了防止第一次访问该网站时在浏览器的cokkie导致更新文章后使您不能看到最新的文章所以建议您禁止本网站使用cokkie或者进入某些页面时刷新一下刷新缓存 </h1>
+            <div class="mdui-chip mdui-float-right mdui-text-color-black">
+                <img class="mdui-chip-icon" src="image/headPic.jpg"/>
+                <span class="mdui-chip-title">ZXEB</span>
+            </div>
+        </div>
+    </div>
+    <div class="card-blank"></div>
+    <div class="mdui-card" id="mdui-card-video-1">
+        <!-- 卡片头部，包含头像、标题、副标题 -->
+        <div class="mdui-card-header">
+            <img class="mdui-card-header-avatar" src="image/article1-author.jpg"/>
+            <div class="mdui-card-header-title">ZXEB</div>
+            <div class="mdui-card-header-subtitle">QQ群：663701276</div>
+        </div>
+            <!-- 卡片中可以包含一个或多个菜单按钮 -->
+            <div class="mdui-card-menu">
+                <button class="mdui-btn mdui-btn-icon mdui-text-color-white"><i
+                        class="mdui-icon material-icons">share</i></button>
+            </div>
+        </div>
+    <div class="card-blank"></div>
+    <div class="mdui-card mdui-ripple">
+        <div class="mdui-card-primary mdui-col-xs-12 mdui-col-lg-5 mdui-col-md-5 mdui-col-lg-5 mdui-col-xl-5">
+            <div class="mdui-card-primary-title .mdui-text-truncate">MDUI  注意 因为本网站是静态网页为了防止第一次访问该网站时在浏览器的cokkie导致更新文章后使您不能看到最新的文章所以建议您禁止本网站使用cokkie或者进入某些页面时刷新一下刷新缓存 </div>
+            <div class="mdui-card-primary-subtitle mdui-p-l-1 mdui-p-r-1">
+                <span class="title-category ">说说</span>
+                <span class="mdui-text-color-grey mdui-p-l-1 mdui-p-r-1">|</span>
+                <span class="title-date ">2023.11.18</span>
+                <span class="mdui-text-color-grey mdui-p-l-1 mdui-p-r-1">|</span>
+                <span class="title-readCount ">作者：ZXEB</span>
+
+            </div>
+            <div class="mdui-card-content mdui-p-l-0">
+               <p>欢迎来到此网站</p>
+            </div>
+        </div>
+        <div class="mdui-dialog" id="shareButton">
+            <div class="mdui-dialog-title">请您复制到剪切板后手动发送</div>
+            <div class="mdui-dialog-content" id="printLocation"></div>
+            <div class="mdui-dialog-actions">
+                <button class="mdui-btn mdui-ripple" mdui-dialog-close>确定</button>
+                <button class="mdui-btn mdui-ripple" onclick="CopyLocation()" mdui-dialog-confirm>复制到剪切板</button>
+            </div>
+        </div>
+    </div>
+<!--底部向上-->
+<div class="mdui-fab mdui-radio mdui-fab-fixed mdui-color-theme-accent" id="btn">
+    <i class="mdui-icon material-icons">arrow_upward</i>
+</div>
+
+
+
+<!--判定浏览器对话框-->
+<!--<div class="mdui-dialog" id="device-help">-->
+    <!--<div class="mdui-dialog-title">温馨提示</div>-->
+    <!--<div class="mdui-dialog-content">为了您的使用体验，请使用Chrome、Firefox、Edge等浏览器进行浏览，并将浏览器升级为最新版本。</div>-->
+    <!--<div class="mdui-dialog-actions">-->
+        <!--<button class="mdui-btn mdui-ripple">帮助</button>-->
+        <!--<button class="mdui-btn mdui-ripple" mdui-dialog-cancel>确定</button>-->
+    <!--</div>-->
+<!--</div>-->
+
+
+
+<script src="js/jquery-3.4.0.min.js"></script>
+<script src="js/mdui.js"></script>
+<script src="js/jquery.qrcode.min.js"></script>
+<script src="js/returnTop.js"></script>
+<script src="js/main.js"></script>
+<script src="js/main2.js"></script>
+<script>
+</script>
+</body>
+</html>
